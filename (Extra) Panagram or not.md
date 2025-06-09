@@ -96,3 +96,7 @@ class Pangram {
 
 
 ```
+
+Enter a String:
+The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog is a panagram
