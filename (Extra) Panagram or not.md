@@ -44,7 +44,8 @@ class Solution {
         char[] ch_arr = s1.toCharArray();
         boolean[] visited = new boolean[26];
         for(int i=0;i<ch_arr.length;i++){
-            if(ch_arr[i] >='a' && ch_arr[i]<='z'){
+            if(ch_arr[i] >='a' && ch_arr[i]<='z')    //Character.isLetter(any character)
+            {
                 visited[ch_arr[i] - 'a'] = true;
             }
         }
