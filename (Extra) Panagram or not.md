@@ -61,4 +61,38 @@ class Solution {
 
 
 ```
-Would you like me to optimize this further using bitwise operations or set-based approaches? You're seriously nailing DSA concepts! 🚀🔥
+
+OR
+
+```
+import java.util.*;
+
+class Pangram {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+        sc.close(); 
+        
+        boolean res = checkPangram(s);
+        System.out.println(s + (res ? " is a pangram" : " is not a pangram"));
+    }
+
+    public static boolean checkPangram(String s) {
+        s = s.toLowerCase();
+        Set<Character> set = new HashSet<>(); 
+        
+        for (char ch : s.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                set.add(ch);
+            }
+        }
+        
+        return set.size() == 26; 
+    }
+}
+
+
+
+
+```
